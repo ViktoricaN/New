@@ -8,52 +8,75 @@
     </title>
 </head>
 <body>
-    <h1>The first page</h1>
-    <h2 class="chapters">Forms</h2>
-    <form action="https://yandex.ru/search">
-        <input type="text" name="text"><br>
-        <input type="radio" name="newwindow" value="1"> In new window<br>
-        <input type="radio" name="newwindow" value="0"> In that window<br>
-        <input type="submit" value="Search">
-    </form>
-    <h2>Parapgraphs</h2>
-    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
-    <p><u>Lorem Ipsum</u> is simply <i>dummy</i> text of the printing and typesetting industry.<a href="https://www.lipsum.com/">See more...</a></p>
-<h2>Headers</h2>
-<h1>Headers1</h1>
-<h2>Headers2</h2>
-<h3>Headers3</h3>
-<ul>
-    <li>Item1</li>
-    <li>Item2</li>
-    <li>Item3</li>
-</ul>
-<ol>
-    <li>Item1</li>
-    <li>Item2</li>
-    <li>Item3</li>
-</ol>
-<h2>Tables</h2>
-    <table cellpadding="5px" cellspacing="2px" border="1px" bgcolor="#6495ed">
-        <caption>Table 1</caption>
-        <tr>
-            <th>first</th>
-            <th>second</th>
-            <th>third</th>
-        </tr>
-        <tr>
-            <td>first</td>
-            <td>second</td>
-            <td>third</td>
-        </tr>
-    </table>
-<h2>Image</h2>
-<a href="https://wallbox.ru/wallpapers/main/201402/fda1f0c1584fb2d.jpg">
-        <img src="https://wallbox.ru/wallpapers/main/201402/fda1f0c1584fb2d.jpg" width="560" height="315"/>
-    </a>
-    <h2>Video</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/TgZl3tEZgEE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h2>sites</h2>
-<iframe src="http://ya.ru/index.php" width="560" height="315"></iframe>
+    <div class="row">
+        <h1>The first page</h1>
+    </div>
+    <div class="row">
+        <div class="outer-wrapper">
+            <h2 class="chapters">Forms</h2>
+            <form action="https://yandex.ru/search">
+                <div class="form-element"><input type="text" name="text"></div>
+                <div class="form-element"><input type="radio" name="newwindow" value="1"> In new window</div>
+                <div class="form-element"><input type="radio" name="newwindow" value="0"> In that window</div>
+                <div class="form-element"><input type="submit" value="Search"></div>
+            </form>
+        </div>
+        <div class="outer-wrapper">
+                <h2 class="chapters">Parapgraphs</h2>
+                <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard </p>
+                <p><u>Lorem Ipsum</u> is simply <i>dummy</i> text of the printing and typesetting industry.<a href="https://www.lipsum.com/">See more...</a></p>
+            </div>
+        <div class="outer-wrapper">
+                <h2 class="chapters">Headers</h2>
+                <h1>Headers1</h1>
+                <h2>Headers2</h2>
+                <h3>Headers3</h3>
+            </div>
+        <div class="outer-wrapper">
+                <h2 class="chapters">Lists</h2>
+                <ul>
+                    <li>Item1</li>
+                    <li>Item2</li>
+                    <li>Item3</li>
+                </ul>
+                <ol>
+                    <li>Item1</li>
+                    <li>Item2</li>
+                    <li>Item3</li>
+                </ol>
+            </div>
+    </div>
+    <div class="row">
+        <div class="outer-wrapper">
+            <h2 class="chapters">Tables</h2>
+            <table cellpadding="5px" cellspacing="2px" border="1px" bgcolor="#6495ed">
+                <caption>Table 1</caption>
+                <tr>
+                    <th>first</th>
+                    <th>second</th>
+                    <th>third</th>
+                </tr>
+                <tr>
+                    <td>first</td>
+                    <td>second</td>
+                    <td>third</td>
+                </tr>
+            </table>
+        </div>
+        <div class="outer-wrapper">
+            <h2 class="chapters">Image</h2>
+            <a href="https://wallbox.ru/wallpapers/main/201402/fda1f0c1584fb2d.jpg">
+                    <img src="https://wallbox.ru/wallpapers/main/201402/fda1f0c1584fb2d.jpg" width="560" height="315"/>
+            </a>
+        </div>
+        <div class="outer-wrapper">
+            <h2 class="chapters">Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TgZl3tEZgEE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="outer-wrapper">
+            <h2 class="chapters">sites</h2>
+            <iframe src="http://ya.ru/index.php" width="560" height="315"></iframe>
+        </div>
+    </div>
 </body>
 </html>
